@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Fellix;
+    src: url();
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.title-logo {
+    height: 30vh;
+    margin-top: 10vh;
+}
+
+.subtitle {
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+    color: #9435f9;
+}
+
+.information {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 100vh;
+}
+
+.information-element {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5vh;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.information-element img {
+    max-width: 100%;
+}
+
+.information-title {
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+    color: white;
+    background-color: #9435f9;
+    padding: 0.8vh 8vh;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 1vh;
+}
+
+.information-subtitle {
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2vh;
+    font-weight: 900;
+    color: white;
+    background-color: #9435f9;
+    padding: 0.8vh 8vh;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 1vh;
+}
