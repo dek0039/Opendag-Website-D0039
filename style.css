@@ -26,6 +26,19 @@ body {
 .title-logo {
     height: 30vh;
     margin-top: 10vh;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .subtitle {
@@ -33,12 +46,21 @@ body {
     font-size: 5vh;
     font-weight: 900;
     color: #9435f9;
+    animation: slideIn 1s ease-out;
 }
 
 .information {
+    animation: slideIn 3s ease-out;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 100vh;
+    grid-template-rows: 1fr 1fr;
+}
+
+.spacing {
+    padding: 15vh;
+}
+
+.spacing-small {
+    padding: 5vh;
 }
 
 .information-element {
@@ -47,6 +69,7 @@ body {
     column-gap: 5vh;
     align-items: center;
     margin-bottom: 10vh;
+    text-align: center;
 }
 
 .information-element img {
@@ -77,4 +100,46 @@ body {
     word-wrap: break-word;
     display: inline-block;
     margin: 1vh;
+}
+
+.information-element img {
+    background-color: #9435f9;
+    padding: 1vh;
+}
+
+img {
+    transition: transform .2s;
+    height: 50vh;
+}
+
+img:hover {
+    transform: scale(1.1); 
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2vh;
+    font-weight: 900;
+    color: white;
+    background-color: #9435f9;
+    padding: 0.8vh 8vh;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 1vh;
+}
+
+p {
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2vh;
+    font-weight: 900;
+    color: white;
+    background-color: #9435f9;
+    padding: 0.8vh 8vh;
+    max-width: 100%;
+    word-wrap: break-word;
 }
