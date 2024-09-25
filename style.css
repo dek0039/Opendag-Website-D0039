@@ -29,6 +29,13 @@ body {
     animation: slideIn 1s ease-out;
 }
 
+.thoughts {
+    margin-left: 40vh;
+    margin-right: 40vh;
+
+    animation: slideIn 3s ease-out;
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(-100%);
@@ -125,7 +132,7 @@ li {
     font-size: 2vh;
     font-weight: 900;
     color: white;
-    background-color: #9435f9;
+    background-color: #751dd4;
     padding: 0.8vh 8vh;
     max-width: 100%;
     word-wrap: break-word;
@@ -138,8 +145,35 @@ p {
     font-size: 2vh;
     font-weight: 900;
     color: white;
-    background-color: #9435f9;
+    background-color: #751dd4;
     padding: 0.8vh 8vh;
     max-width: 100%;
     word-wrap: break-word;
+}
+
+.lesson-group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.lesson {
+    align-items: center;
+    padding: 4vh;
+    margin-bottom: 5vh;
+}
+
+#pad {
+    padding: 0.8vh 2vh;
+}
+
+.lesson h1 {
+    font-family: Fellix, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+    color: white;
+    background-color: #9435f9;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: inline-block;
 }
